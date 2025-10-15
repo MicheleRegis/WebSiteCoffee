@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback - Morning Star</title>
+  <link rel="stylesheet" href="css/contact_style.css">
+</head>
+<body>
+  <h1>We value your feedback!</h1>
+
+  <form id="feedbackForm" novalidate>
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname" required><br>
+    <span class="error" id="fnameError"></span>
+
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lname" required><br>
+    <span class="error" id="lnameError"></span>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <span class="error" id="emailError"></span>
+
+    <label for="feedback">Your Feedback:</label><br>
+    <textarea id="feedback" name="feedback" rows="4" maxlength="200" required></textarea><br>
+    <span class="error" id="feedbackError"></span>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p class="thankyou" id="thankyouMsg" style="display:none;">Thank you for your feedback!</p>
+
+  <script src="js/contact_script.js"></script>
+</body>
+</html>
