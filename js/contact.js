@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
   form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    // Limpa mensagens de erro
+    // Clean message
     document.querySelectorAll('.error').forEach(el => el.textContent = '');
 
     let valid = true;
